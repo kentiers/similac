@@ -17500,6 +17500,38 @@ footer p {
   font-size: 13px
 }
 
+footer.call {
+  padding: 15px 30px 70px;
+}
+
+footer.call h4,
+h5,
+h6 {
+  color: #C38F34;
+  text-transform: uppercase
+}
+
+footer.call h6 {
+  font-size: 40px
+}
+
+footer.call h6.copyright {
+  font-size: 23px
+}
+
+footer.call h5 {
+  font-size: 13px
+}
+
+footer.call h4 {
+  font-size: 24px
+}
+
+footer .footer-logo img {
+  position: relative;
+  width: 50%
+}
+
 section.top-banner {
   padding: 0 0 15px 0;
 }
