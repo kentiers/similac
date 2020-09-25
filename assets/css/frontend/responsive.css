@@ -1,0 +1,91 @@
+@media (min-width: 768px) {
+  body main {
+    max-width: 900px;
+  }
+
+  section.top-banner .tblogo {
+    height: 150px;
+    background-size: 300px;
+    margin: 50px 30px
+  }
+
+  section.top-description h1 {
+    font-size: 40px
+  }
+
+  section.composition .cage-composition .main-composition .sub-title h1 {
+    font-size: 58px
+  }
+
+  section.composition .cage-composition .main-composition .title h1 {
+    font-size: 128px
+  }
+
+  section.composition .cage-composition .main-composition .title h3 {
+    font-size: 40px
+  }
+
+  section.composition .cage-composition .description-composition h2 {
+    font-size: 34px
+  }
+
+  section.composition .icon-composition .icon-container .icon-item h1 {
+    font-size: 43px
+  }
+
+  section.composition .icon-composition .icon-container .icon-item h1 span {
+    font-size: 26px
+  }
+
+  section.about-tabs .main-tabs .nav-item .nav-link {
+    font-size: 25px
+  }
+
+  section.about-tabs .tab-content #pills-similac .description h1 {
+    font-size: 28px
+  }
+
+  section.about-tabs .tab-content #pills-ingredients .btn-group .nav-link {
+    font-size: 28px
+  }
+
+  section.about-tabs .tab-content #pills-ingredients .tab-content ol li {
+    font-size: 23px
+  }
+
+  section.about-tabs .tab-content #pills-serving .btn-group .nav-link {
+    font-size: 28px
+  }
+
+  section.about-tabs .tab-content #pills-serving .tab-content ol li {
+    font-size: 19px
+  }
+
+  section.product .accordion .card .card-header .btn-block {
+    font-size: 2rem
+  }
+
+  section.product .accordion .card .collapse-cage .description h2 {
+    font-size: 24px
+  }
+
+  section.product .accordion .card .collapse-cage .description .pills-product {
+    font-size: 20px
+  }
+
+  section.product .accordion .card .collapse-cage p.pills-label {
+    font-size: 20px
+  }
+
+  section.faq h1.title {
+    font-size: 52px
+  }
+
+  section.shop .card-custom .card-header {
+    font-size: 2rem
+  }
+
+  section.shop .card-custom .row .col-3 a span {
+    font-size: 18px
+  }
+}
