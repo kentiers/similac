@@ -17492,44 +17492,64 @@ header a.logo img {
 }
 
 footer {
-  padding-top: 60px
+  padding: 30px 0 60px
 }
 
-footer p {
-  text-align: center;
-  font-size: 13px
+footer .top {
+  padding: 15px 30px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center
 }
 
-footer.call {
-  padding: 15px 30px 70px;
+footer .top .contact {
+  font-size: 24px
 }
 
-footer.call h4,
-h5,
-h6 {
-  color: #C38F34;
-  text-transform: uppercase
+footer .top .contact a {
+  color: #cea241;
+  display: inline-block;
+  padding: 3px;
+  margin-right: 10px
 }
 
-footer.call h6 {
-  font-size: 30px
+footer .top .information {
+  color: #cea241
 }
 
-footer.call h6.copyright {
-  font-size: 18px
+footer .top .information p {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 700
 }
 
-footer.call h5 {
-  font-size: 11px
+footer .top .information h3 {
+  font-size: 1.4rem;
+  font-weight: 700
 }
 
-footer.call h4 {
-  font-size: 20px
+footer .bottom {
+  padding: 15px 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center
 }
 
-footer .footer-logo img {
-  position: relative;
-  width: 50%
+footer .bottom .copyright h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #cea241
+}
+
+footer .bottom .logo img {
+  height: 30px
 }
 
 section.top-banner {
@@ -17560,40 +17580,47 @@ section.top-description h1 {
 }
 
 section.composition {
-  padding: 100px 30px 60px
+  padding: 100px 30px 60px;
 }
 
 section.composition .cage-composition {
   position: relative;
-  top: -50px
+  top: -50px;
 }
 
 section.composition .cage-composition .main-composition {
   padding: 0 30px;
-  position: relative
+  position: relative;
 }
 
 section.composition .cage-composition .main-composition img {
   width: 100%;
-  padding: 0 10px
+  padding: 0 10px;
 }
 
 section.composition .cage-composition .main-composition .sub-title {
   position: absolute;
   top: 5%;
   left: 35%;
-  transform: translate(-50%, 50%);
-  color: #2559a9
+  transform: translate(-50%,50%);
+  color: #2559a9;
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+section.composition .cage-composition .main-composition .sub-title.active {
+  opacity: 1;
+  transition: all .5s ease;
 }
 
 section.composition .cage-composition .main-composition .sub-title h1 {
   font-weight: 700;
   font-size: 28px;
-  margin: 0
+  margin: 0;
 }
 
 section.composition .cage-composition .main-composition .sub-title h1 span {
-  font-size: 18px
+  font-size: 18px;
 }
 
 section.composition .cage-composition .main-composition .title {
@@ -17602,33 +17629,46 @@ section.composition .cage-composition .main-composition .title {
   right: 0;
   width: 50%;
   text-align: center;
-  color: #2559a9
+  color: #2559a9;
 }
 
 section.composition .cage-composition .main-composition .title h1 {
   font-size: 64px;
   margin: 0;
-  font-weight: 700
+  font-weight: 700;
 }
 
 section.composition .cage-composition .main-composition .title h3 {
   font-size: 24px;
   margin: 0;
-  font-weight: 700
+  font-weight: 700;
 }
 
 section.composition .cage-composition .description-composition {
   padding: 0 30px 15px;
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-section.composition .cage-composition .description-composition h2 {
+section.composition .cage-composition .description-composition .card-description {
+  overflow: hidden;
+  position: relative;
+}
+
+section.composition .cage-composition .description-composition .card-description h2 {
+  position: relative;
+  top: -300px;
+  left: 0;
+  display: block;
   margin: 0;
   font-size: 18px;
   font-weight: 700;
   padding: 10px 20px;
-  color: #2559a9
+  color: #2559a9;
+  transition: all .5s ease;
+}
+
+section.composition .cage-composition .description-composition .card-description.active h2 {
+  transition: all .5s ease;
+  top: 0;
 }
 
 section.composition .icon-composition {
@@ -17647,7 +17687,7 @@ section.composition .icon-composition {
   -ms-flex-align: stretch;
   align-items: stretch;
   -ms-flex-line-pack: stretch;
-  align-content: stretch
+  align-content: stretch;
 }
 
 section.composition .icon-composition .icon-container {
@@ -17655,11 +17695,11 @@ section.composition .icon-composition .icon-container {
   margin-top: 15px;
   padding: 0 5px;
   cursor: pointer;
-  display: block
+  display: block;
 }
 
 section.composition .icon-composition .icon-container.active .icon-item:before {
-  display: none
+  display: none;
 }
 
 section.composition .icon-composition .icon-container .icon-item {
@@ -17676,7 +17716,7 @@ section.composition .icon-composition .icon-container .icon-item {
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-align: center;
-  align-items: center
+  align-items: center;
 }
 
 section.composition .icon-composition .icon-container .icon-item:before {
@@ -17689,7 +17729,7 @@ section.composition .icon-composition .icon-container .icon-item:before {
   background-image: url(../../images/mute-balls.png);
   background-position: 50%;
   background-repeat: no-repeat;
-  background-size: cover
+  background-size: cover;
 }
 
 section.composition .icon-composition .icon-container .icon-item h1 {
@@ -17702,12 +17742,12 @@ section.composition .icon-composition .icon-container .icon-item h1 {
   text-align: center;
   color: #fff;
   font-weight: 700;
-  font-size: 20px
+  font-size: 20px;
 }
 
 section.composition .icon-composition .icon-container .icon-item h1 span {
   display: block;
-  font-size: 12px
+  font-size: 12px;
 }
 
 section.about-tabs {

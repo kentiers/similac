@@ -1,14 +1,1 @@
-"use strict";
-$(document).ready(function () {
-  AOS.init(), $(".icon-item").click(function () {
-    var t = $(this).data("title"),
-      i = $(this).data("description");
-    $(this).closest(".icon-composition").find(".active").removeClass("active"), $(this).closest(".icon-container").addClass("active"), $("#titleComposition").html(t), $("#descriptionComposition").html(i)
-  }), $(window).scroll(function () {
-    $(this).scrollTop() >= 150 ? $("#return-to-top").addClass("active") : $("#return-to-top").removeClass("active")
-  }), $("#return-to-top").click(function (t) {
-    t.preventDefault(), $("body,html").animate({
-      scrollTop: 0
-    }, 1e3)
-  })
-});
+"use strict";$(document).ready(function(){AOS.init({duration:1200}),$(".icon-item").click(function(){var t=$(this).data("title"),i=$(this).data("description");$(this).closest(".icon-composition").find(".active").removeClass("active"),$(this).closest(".icon-container").addClass("active"),$(".main-composition > .sub-title").removeClass("active"),setTimeout(function(){$("#titleComposition").html(t),$(".main-composition > .sub-title").addClass("active")},500),$(".description-composition > .card-description").removeClass("active"),setTimeout(function(){$("#descriptionComposition").html(i),$(".description-composition > .card-description").addClass("active")},500)}),$(window).scroll(function(){$(".video").each(function(t){var i=$(window).scrollTop(),o=$(this).offset().top+$(this).outerHeight()/2;$(window).scrollTop()+$(window).height()>o&&i<o?$("iframe#youtubeVideo")[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}',"*"):$("iframe#youtubeVideo")[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}',"*")}),$(this).scrollTop()>=150?$("#return-to-top").addClass("active"):$("#return-to-top").removeClass("active")}),$("#return-to-top").click(function(t){t.preventDefault(),$("body,html").animate({scrollTop:0},1e3)}),setTimeout(function(){$(".main-composition > .sub-title").addClass("active"),$(".description-composition > .card-description").addClass("active")},1500)});
