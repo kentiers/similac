@@ -17664,15 +17664,21 @@ footer .top .information {
 }
 
 footer .top .information p {
-  margin: 0
+  margin: 0;
+  font-size: .7rem
+}
+
+footer .top .information h3 {
+  font-size: 1rem
 }
 
 footer .top .information h3,
 footer .top .information p {
-  font-size: .7rem;
   font-weight: 700;
   color: #cea241
 }
+
+
 
 footer .bottom {
   padding: 15px 30px;
